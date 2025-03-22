@@ -4,18 +4,18 @@
 int main()
 {
 
-    // Variaveis das Cartas 1 e 2:
-    char estado1, estado2;
-    char codigo1[4], codigo2[4];
+    // Variaveis das Cartas 1 e 2 criado para armazenar os dados inputado pelo teclado:
+    char estado1, estado2;   
+    char codigo1[4], codigo2[4]; 
     char nomeCidade1[20], nomeCidade2[20];
     int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
     int pontosTuristicos1, pontosTuristicos2;
 
-    // Coleta de Dados da carta 1 via scanf.
+    // Coleta de Dados da carta 1 via teclado e função scanf.
 
-    printf("     Preencha os dados da Carta 1:\n");
+    printf("     Preencha os dados da Carta 1:\n"); 
 
     printf("Digita uma letra de 'A' a 'H' (representando um dos oito estados). \nEstado: ");
     scanf(" %c", &estado1);
@@ -38,7 +38,9 @@ int main()
     printf("\nInforme a quantidade de pontos turiscos na cidade. \nNumero de pontos turisticos: ");
     scanf(" %d", &pontosTuristicos1);
 
-    // Coleta de Dados da carta 2 via scanf.
+
+    // Coleta de Dados da carta 2 via teclado e função scanf.
+    
     printf("\n     Preencha os dados da carta 2:\n");
     printf("Digita uma letra de 'A' a 'H' (representando um dos oito estados). \nEstado: ");
     scanf(" %c", &estado2);
@@ -63,18 +65,17 @@ int main()
 
     setlocale(LC_ALL, "Portuguese"); // setado linguagem para imprimir o ² do km²-- por curiosidade
 
-    // ImpressÃ£o dos dados da carta 1
+    // Impressao dos dados da carta 1
     printf("\n\nCarta 1:");
-    printf("\nEstado: %c", estado1);
-    printf("\nCodigo: %s", codigo1);
+    printf("\nEstado: %c", estado1); 
+    printf("\nCodigo: %s", codigo1); 
     printf("\nNome da Cidade: %s", nomeCidade1);
     printf("\nPopulacao: %d", populacao1);
     printf("\nArea: %.2f km\xB2", area1);
     printf("\nPIB: %.2f bilhoes de reais", pib1);
     printf("\nNumero de Pontos Turisticos: %d", pontosTuristicos1);
 
-    // ImpressÃ£o dos dados da carta 2
-
+    // Impressao dos dados da carta 2
     printf("\n\nCarta 2:");
     printf("\nEstado: %c", estado2);
     printf("\nCodigo: %s", codigo2);
